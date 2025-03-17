@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="header1.png" alt="DENR Logo" class="header-logo">
+    </div>
+    <div class="header">
+        <label><input type="radio" name="forestOption" id="forestProductOnly"> Forest Product or Machinery Equipment and/ Tools Only</label>
+        <label><input type="radio" name="forestOption" id="forestWithRespondent"> Forest Product with Respondent</label>
+        <label><input type="radio" name="forestOption" id="forestWithConveyance"> Forest Product with Conveyance and or Chainsaw</label>
+    </div>
+
+    <div class="checklist">
+        <label class="essential"><input type="checkbox"> Duly Accomplished Receipt</label><br>
+        <label class="essential"><input type="checkbox"> Tally Sheet</label><br>
+        <label class="essential"><input type="checkbox"> Geo-tagged Photos of Apprehension</label><br>
+        <label class="essential"><input type="checkbox"> GIS Map of the Place of Apprehension</label><br>
+        <label class="optional"><input type="checkbox"> Original Copy of OR/CR and Certification of Non-surrender of OR/CR</label><br>
+        <label class="essential"><input type="checkbox"> Seizure Order and Seizure Receipt</label><br>
+        <label class="essential"><input type="checkbox"> Notice of Hearing</label><br>
+       
+        <div class="nested-list essential">
+            <label>a. Forest Product Only/Tools, Equipments, Machineries - Posting of 3 Conspicuous</label><br>
+        </div>
+
+        <div class="optional respondent">
+            <label>b. Forest Product with Respondent</label><br>
+            <div class="nested-list">
+                <span>1. Owner of Lumber</span><br>
+                <span>2. Apprehending Officer</span><br>
+                <span>3. Other Interested Party</span><br>
+            </div>
+        </div>
+
+        <div class="optional conveyance">
+            <label>c. Forest Product with Conveyance/Chainsaw</label><br>
+            <div class="nested-list">
+                <span>1. Owner of Lumber</span><br>
+                <span>2. Owner of Conveyance/Chainsaw</span><br>
+                <span>3. Apprehending Officer</span><br>
+                <span>4. Other Interested Party</span><br>
+            </div>
+        </div>
+
+        <label class="optional"><input type="checkbox"> Custody Receipt</label><br>
+        <label class="optional respondent"><input type="checkbox"> Proof of Notice (Forest with Respondent and with Conveyance)</label><br>
+        <div class="optional respondent">
+            <div class="nested-list">
+                <span>a. Certification of posting & Photos of Posting (Forest Product Only/Tools, Equipments, Machineries)</span><br>
+                <span>b. Registry Receipt; OR Receipt of the Party (Forest Product with Respondent/Conveyance/Chainsaw)</span><br>
+            </div>
+            <label class="optional respondent"><input type="checkbox"> Affidavit/Sworn Statements (If Applicable)</label><br>
+            <label class="optional respondent"><input type="checkbox"> Minutes of Administrative Confiscation Proceedings (ACP)</label><br>
+            <label class="optional respondent"><input type="checkbox"> Recommended of Hearing Officer</label><br>
+            <label class="optional respondent"><input type="checkbox"> Endorsement of PENRO</label><br>
+            <label class="optional respondent"><input type="checkbox"> Draft Order</label><br>
+        </div>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-box">
+            <p>Prepared by:</p>
+            <p>__________________________</p>
+            <p>Date: __________</p>
+        </div>
+
+        <div class="signature-box">
+            <p>Verified by:</p>
+            <p>__________________________</p>
+            <p>Date: __________</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
